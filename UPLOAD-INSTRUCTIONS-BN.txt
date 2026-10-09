@@ -1,0 +1,10 @@
+আমানাহ অনলাইন শপ Admin Panel — আপলোড নির্দেশনা
+
+ZIP থেকে index.html ও config.js ফাইল দুটি Extract করুন।
+GitHub রিপোজিটরির মূল ফোল্ডারে index.html খুলুন → Edit (✏️) → পুরোনো লেখা মুছে ZIP-এর index.html-এর সম্পূর্ণ লেখা পেস্ট করুন → Commit changes।
+এরপর config.js-এর জন্য একই কাজ করুন। ফাইল দুটি একই root folder-এ থাকতে হবে।
+Netlify deploy শেষ হলে https://amanah-online-shop-admin.netlify.app/ রিফ্রেশ করুন।
+
+এই সংস্করণে পণ্য ছবির ইনপুট/প্রিভিউ/আপলোড, ক্যাটাগরি নির্বাচন, ছবিসহ পণ্যের তালিকা এবং orders.total কলাম ব্যবহার করা হয়েছে।
+Supabase Storage-এ product-images bucket এবং admin/staff upload policy থাকতে হবে। ছবির আপলোডে permission error এলে সেই error পাঠাবেন।
+config.js-এ শুধু Supabase URL ও public publishable key আছে; service_role key কখনো ব্যবহার করবেন না।
